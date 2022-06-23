@@ -1,0 +1,147 @@
+body{
+    background: linear-gradient(300deg, rgba(76, 76, 243, 0.67),rgba(61, 82, 197, 0.637));
+}
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    
+}
+.box{
+    /* border: 1px solid black; */
+    width: 600px;
+    height: 276px;
+    background: linear-gradient(220deg, rgb(61, 61, 114),rgb(83, 109, 165));
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+}
+.hours{
+    color: navy;
+    background-color: aliceblue;
+    height: 120px;
+    width: 200px;
+    /* border: 1px solid red; */
+    border-radius: 24px;
+}
+.mid{
+    border-radius: 24px;
+    background-color: aliceblue;
+    height: 120px;
+    width: 120px;
+}
+.minutes{
+    border-radius: 24px;
+    height: 120px;
+    width: 200px;
+    /* border: 1px solid red; */
+    background-color: aliceblue;
+    color: navy;
+}
+.mid h3{
+    font-size: 100px;
+    position: relative;
+    left: 43px;
+    bottom: 110px;
+    animation: font 1s ease-in-out 0s infinite ;
+}
+@keyframes font {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+    
+}
+.minutes h3{
+    font-size: 100px;
+    position: relative;
+    left: 43px;
+    bottom: 98px;
+}
+.hours h3{
+    font-size: 100px;
+    position: relative;
+    left: 43px;
+    bottom: 98px;
+}
+.date{
+    font-size: 41px;
+    position: absolute;
+    bottom: 126px;
+    word-spacing: 45px;
+    color: azure;
+}
+@media screen and (max-width:900px){
+    body{
+        background: aliceblue;
+        overflow: hidden;
+    }
+    .box{
+        /* border: 1px solid black; */
+        width: 350px;
+        height: 80vh;
+        background: linear-gradient(220deg, rgb(61, 61, 114),rgb(83, 109, 165));
+        border-radius: 20px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: row;
+        margin-left: 0px;
+        column-gap: 5px;
+        position: fixed;
+    }
+    .mid h3{
+        font-size: 100px;
+        position: relative;
+        left: 23px;
+        bottom: 110px;
+        animation: font 1s ease-in-out 0s infinite ;
+    }
+    .minutes h3{
+        font-size: 100px;
+        position: relative;
+        left: 23px;
+        bottom: 98px;
+    }
+    .hours h3{
+        font-size: 100px;
+        position: relative;
+        left: 13px;
+        bottom: 98px;
+    }
+    .date{
+        font-size: 31px;
+        /* position: absolute;   */
+        /* bottom: 206px; */
+        word-spacing: 15px;
+        color: rgb(15, 15, 15);
+    }
+    .hours{
+        color: navy;
+        background-color: aliceblue;
+        height: 120px;
+        width: 170px;
+        /* border: 1px solid red; */
+        border-radius: 24px;
+    }
+    .mid{
+        border-radius: 24px;
+        background-color: aliceblue;
+        height: 120px;
+        width: 100px;
+    }
+    .minutes{
+        border-radius: 24px;
+        height: 120px;
+        width: 170px;
+        /* border: 1px solid red; */
+        background-color: aliceblue;
+        color: navy;
+    }
+
+}
